@@ -18,3 +18,9 @@ let ageTypeInference = 25;
 let nameTypeInference = "Alice";
 
 let isAdultTypeInference = false;
+
+// Type any
+let randomValue: any;
+randomValue = 42;
+randomValue = "random";
+randomValue = true;
