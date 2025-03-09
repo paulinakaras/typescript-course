@@ -52,3 +52,8 @@ let state: "on" | "off";
 state = "on";
 state = "off";
 // state = "pending" - compliation error
+
+// Type null
+let nameNullable: string | null;
+nameNullable = "John";
+nameNullable = null;
