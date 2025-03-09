@@ -46,3 +46,9 @@ let myValue: string | number;
 myValue = "Hello";
 myValue = 123;
 // myValue = true; - complilation error
+
+// Literal types
+let state: "on" | "off";
+state = "on";
+state = "off";
+// state = "pending" - compliation error
