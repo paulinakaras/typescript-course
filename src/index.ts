@@ -24,3 +24,19 @@ let randomValue: any;
 randomValue = 42;
 randomValue = "random";
 randomValue = true;
+
+// Type unknown
+let userInput: unknown;
+userInput = "Hello";
+userInput = 42;
+
+// console.log(userInput.toUpperCase()); compilation error, type is not verify
+
+// Type is verify
+if (typeof userInput === "string") {
+  console.log(userInput.toUpperCase());
+}
+
+if (typeof userInput === "number") {
+  console.log(userInput.toFixed(2));
+}
