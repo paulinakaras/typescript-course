@@ -30,9 +30,9 @@ let userInput: unknown;
 userInput = "Hello";
 userInput = 42;
 
-// console.log(userInput.toUpperCase()); compilation error, type is not verify
+// console.log(userInput.toUpperCase()); compilation error, type is not verified
 
-// Type is verify
+// Type is verified
 if (typeof userInput === "string") {
   console.log(userInput.toUpperCase());
 }
@@ -40,3 +40,9 @@ if (typeof userInput === "string") {
 if (typeof userInput === "number") {
   console.log(userInput.toFixed(2));
 }
+
+// Union
+let myValue: string | number;
+myValue = "Hello";
+myValue = 123;
+// myValue = true; - complilation error
