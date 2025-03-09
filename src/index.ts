@@ -11,3 +11,10 @@ secondName = "Ola"; // let allow to change value
 let age: number = 25;
 
 let isAdult: boolean = false;
+
+// Type inference
+let ageTypeInference = 25;
+
+let nameTypeInference = "Alice";
+
+let isAdultTypeInference = false;
