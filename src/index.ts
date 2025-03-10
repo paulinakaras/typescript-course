@@ -79,7 +79,7 @@ console.log(twoDimensionArray[1][0]);
 let tuple: [string, number, boolean] = ["example", 42, true];
 
 let myTuple: [string, number]; // fixed size
-myTuple = ['Hello', 42];
+myTuple = ["Hello", 42];
 
 myTuple.pop(); // it will remove last element
 
@@ -99,3 +99,23 @@ users.push({
   age: 32,
 });
 console.log(users);
+
+enum DaysOfWeek {
+  Monday, //0
+  Tuesday, //1
+  Wednesday, //2
+  Thursday, //3
+  Friday, //4
+  Saturday, //5
+  Sunday, //6
+}
+let today: DaysOfWeek = DaysOfWeek.Friday;
+console.log(today);
+
+enum Colors {
+  Red = "RED",
+  Green = "GREEN",
+  Blue = "BLUE",
+}
+let favouriteColors: Colors = Colors.Green;
+console.log(favouriteColors);
