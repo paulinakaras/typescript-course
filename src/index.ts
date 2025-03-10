@@ -57,3 +57,40 @@ state = "off";
 let nameNullable: string | null;
 nameNullable = "John";
 nameNullable = null;
+
+// Array
+// First option
+let numbers: number[] = [1, 2, 3, 4];
+console.log(numbers);
+
+//Second option
+let names: Array<string> = ["Jan", "Kasia", "Ola"];
+
+let mixedArray: (number | string)[] = [1, "two", 3, "four"];
+
+let twoDimensionArray: number[][] = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
+
+console.log(twoDimensionArray[1][0]);
+
+let tuple: [string, number, boolean] = ["example", 42, true];
+
+type User = {
+  name: string;
+  age: number;
+};
+
+let users: User[] = [
+  { name: "John", age: 23 },
+  { name: "Kate", age: 34 },
+];
+console.log(users);
+
+users.push({
+  name: "Paulina",
+  age: 32,
+});
+console.log(users);
