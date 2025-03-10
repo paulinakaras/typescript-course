@@ -78,6 +78,11 @@ console.log(twoDimensionArray[1][0]);
 
 let tuple: [string, number, boolean] = ["example", 42, true];
 
+let myTuple: [string, number]; // fixed size
+myTuple = ['Hello', 42];
+
+myTuple.pop(); // it will remove last element
+
 type User = {
   name: string;
   age: number;
