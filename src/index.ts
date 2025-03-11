@@ -119,3 +119,44 @@ enum Colors {
 }
 let favouriteColors: Colors = Colors.Green;
 console.log(favouriteColors);
+
+// Function
+function addNumbers(a: number, b: number): number {
+  return a + b;
+}
+
+const result = addNumbers(5, 10);
+console.log(result);
+
+function greet(name: string): string {
+  return `Hello ${name}!`;
+}
+
+let grettingMessage = greet("John");
+console.log(grettingMessage);
+
+function greetOptional(name?: string): string {
+  if (name) {
+    return `Hello ${name}`;
+  } else {
+    return "Hello stranger";
+  }
+}
+console.log(greetOptional());
+console.log(greetOptional("John"));
+
+function greetDefault(name: string = "John"): string {
+  return `Hello ${name}`;
+}
+console.log(greetDefault());
+console.log(greetDefault("Anna"));
+
+function printId(id: number | string): void {
+  console.log(`Your ID is ${id}`);
+}
+console.log(printId(2));
+console.log(printId("23"));
+
+function throwError(message: string): never {
+  throw new Error(message);
+}
