@@ -136,6 +136,7 @@ let grettingMessage = greet("John");
 console.log(grettingMessage);
 
 function greetOptional(name?: string): string {
+  // optional parameter
   if (name) {
     return `Hello ${name}`;
   } else {
@@ -146,6 +147,7 @@ console.log(greetOptional());
 console.log(greetOptional("John"));
 
 function greetDefault(name: string = "John"): string {
+  // default parameter
   return `Hello ${name}`;
 }
 console.log(greetDefault());
@@ -153,10 +155,26 @@ console.log(greetDefault("Anna"));
 
 function printId(id: number | string): void {
   console.log(`Your ID is ${id}`);
+  return undefined; // undefined can be returned with void
 }
 console.log(printId(2));
 console.log(printId("23"));
 
 function throwError(message: string): never {
   throw new Error(message);
+  //   return undefined; // nothing, including undefined cannot be returned with never
+}
+
+function varExample() {
+  if (true) {
+    var x = 10;
+  }
+  console.log(x);
+}
+
+function letExample() {
+  if (true) {
+    let x = 10;
+  }
+  // console.log(x); compilation error
 }
