@@ -172,9 +172,20 @@ function varExample() {
   console.log(x);
 }
 
+letExample(); // hoisting in function
+
 function letExample() {
   if (true) {
     let x = 10;
   }
   // console.log(x); compilation error
 }
+
+// hoisting in var
+// console.log(nameVarHoisting); // compilation error
+var nameVarHoisting = "Alice";
+console.log(nameVarHoisting); // "Alice"
+
+// hoisting in let
+// console.log(ageLetHoisting); // compilation error
+let ageLetHoisting = 25;
