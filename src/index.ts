@@ -267,3 +267,17 @@ let worker: Employee = {
   age: 40,
   employeeId: 12,
 };
+
+// Intersection types
+type PersonIntersectionType = {
+  name: string;
+  age: number;
+};
+type EmployeeIntersectionType = PersonIntersectionType & {
+  employeeId: number;
+};
+let workerIntersectionType = {
+  name: "Jan",
+  age: 30,
+  employeeId: 123,
+};
