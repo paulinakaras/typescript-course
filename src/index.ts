@@ -281,3 +281,13 @@ let workerIntersectionType = {
   age: 30,
   employeeId: 123,
 };
+
+//readonly object
+interface Car {
+  readonly make: string;
+  model: string;
+}
+let myCar: Car = {
+  make: "Toyota",
+  model: "Corolla",
+};
