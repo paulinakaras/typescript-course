@@ -204,3 +204,20 @@ for (const num of numberLoop) {
 
 // forEach loop
 numberLoop.forEach((num) => console.log(num ** 2));
+
+// Objects
+let person: {
+  name: string;
+  age: number;
+  greet: () => void;
+} = {
+  name: "John",
+  age: 30,
+  greet: function () {
+    console.log(`Hello, my name is ${this.name}`);
+  },
+};
+console.log(person.greet());
+
+let personObject: object = { name: "Ola", age: 30 };
+// console.log(personObject.name) compilation error
