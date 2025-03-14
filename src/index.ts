@@ -221,3 +221,49 @@ console.log(person.greet());
 
 let personObject: object = { name: "Ola", age: 30 };
 // console.log(personObject.name) compilation error
+
+// Interfaces
+interface Person {
+  name: string;
+  age: number;
+  greet(): void;
+}
+let john: Person = {
+  name: "John",
+  age: 35,
+  greet() {
+    console.log(`Hello my name is ${this.name}`);
+  },
+};
+
+john.greet();
+
+// Type aliases
+type PersonAliasesType = {
+  name: string;
+  age: number;
+  greet(): void;
+};
+
+const kate: PersonAliasesType = {
+  name: "Kate",
+  age: 30,
+  greet() {
+    console.log(`Hello my name is ${this.name}`);
+  },
+};
+kate.greet();
+
+// Interface extensions
+interface PersonInterfaceExtended {
+  name: string;
+  age: number;
+}
+interface Employee extends PersonInterfaceExtended {
+  employeeId: number;
+}
+let worker: Employee = {
+  name: "Alice",
+  age: 40,
+  employeeId: 12,
+};
