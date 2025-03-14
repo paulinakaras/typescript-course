@@ -189,3 +189,18 @@ console.log(nameVarHoisting); // "Alice"
 // hoisting in let
 // console.log(ageLetHoisting); // compilation error
 let ageLetHoisting = 25;
+
+const numberLoop: number[] = [1, 2, 3, 4, 5]; // [0, 1, 2, 3, 4]
+
+// 'for' loop
+for (let i = 0; i < numberLoop.length; i++) {
+  console.log(numberLoop[i] ** 2);
+}
+
+// 'for...of' loop
+for (const num of numberLoop) {
+  console.log(num ** 2);
+}
+
+// forEach loop
+numberLoop.forEach((num) => console.log(num ** 2));
